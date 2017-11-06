@@ -79,6 +79,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 // };
 
 // dress();
+__webpack_require__(1);
+
 var Car = function () {
   function Car() {
     _classCallCheck(this, Car);
@@ -97,6 +99,12 @@ var Car = function () {
 var bmw = new Car();
 
 bmw.manufacturer('bmw');
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
