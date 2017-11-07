@@ -13,7 +13,7 @@ let config = {
   module: {
     rules: [
       {
-        test: /\.jsx$/, // files ending with .js
+        test: /\.js$/, // files ending with .js
         exclude: /node_modules/, // exclude the node_modules directory
         loader: 'babel-loader' // use this (babel-loader) loader
       },
@@ -27,10 +27,11 @@ let config = {
         })
       },
       {
-        test: /\.(jpe?g|png|gif|svg)/i,
+        test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
           'file-loader?context=src/assets/images/&name=images/[path][name].[ext]',
           {
+            // images loader
             loader: 'image-webpack-loader',
             query: {
               mozjpeg: {

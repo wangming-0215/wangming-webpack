@@ -5,3 +5,13 @@
   font-size: 5rem;
   font-weight: 900;
   font-family: "Merriweather", sans-serif; }
+
+.container {
+  width: 100%;
+  display: flex; }
+  .container .image-wrapper {
+    display: inline-block;
+    margin: 0 10px; }
+    .container .image-wrapper__image {
+      width: auto;
+      height: 300px; }
