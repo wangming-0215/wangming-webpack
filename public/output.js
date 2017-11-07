@@ -67,44 +67,13 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-// const dress = () => {
-//   document.write('I like your dress');
-// };
-
-// dress();
-__webpack_require__(1);
-
-var Car = function () {
-  function Car() {
-    _classCallCheck(this, Car);
-  }
-
-  _createClass(Car, [{
-    key: 'manufacturer',
-    value: function manufacturer(car) {
-      document.write('I have a ' + car);
-    }
-  }]);
-
-  return Car;
-}();
-
-var bmw = new Car();
-
-bmw.manufacturer('bmw');
+eval("// const dress = () => {\r\n//   document.write('I like your dress');\r\n// };\r\n\r\n// dress();\r\n__webpack_require__(1);\r\nclass Car {\r\n  manufacturer(car) {\r\n    document.write(`I have a ${car}`);\r\n  }\r\n}\r\n\r\nconst bmw = new Car();\r\n\r\nbmw.manufacturer('bmw');\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvaW5kZXguanM/OTU1MiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQSwrQkFBK0IsSUFBSTtBQUNuQztBQUNBOztBQUVBOztBQUVBIiwiZmlsZSI6IjAuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBjb25zdCBkcmVzcyA9ICgpID0+IHtcclxuLy8gICBkb2N1bWVudC53cml0ZSgnSSBsaWtlIHlvdXIgZHJlc3MnKTtcclxuLy8gfTtcclxuXHJcbi8vIGRyZXNzKCk7XHJcbnJlcXVpcmUoJy4vYXNzZXRzL3N0eWxlc2hlZXRzL3N0eWxlcy5zY3NzJyk7XHJcbmNsYXNzIENhciB7XHJcbiAgbWFudWZhY3R1cmVyKGNhcikge1xyXG4gICAgZG9jdW1lbnQud3JpdGUoYEkgaGF2ZSBhICR7Y2FyfWApO1xyXG4gIH1cclxufVxyXG5cclxuY29uc3QgYm13ID0gbmV3IENhcigpO1xyXG5cclxuYm13Lm1hbnVmYWN0dXJlcignYm13Jyk7XHJcblxuXG5cbi8vLy8vLy8vLy8vLy8vLy8vL1xuLy8gV0VCUEFDSyBGT09URVJcbi8vIC4vc3JjL2luZGV4LmpzXG4vLyBtb2R1bGUgaWQgPSAwXG4vLyBtb2R1bGUgY2h1bmtzID0gMCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///0\n");
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvYXNzZXRzL3N0eWxlc2hlZXRzL3N0eWxlcy5zY3NzP2Q5N2IiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiMS5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luXG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9zcmMvYXNzZXRzL3N0eWxlc2hlZXRzL3N0eWxlcy5zY3NzXG4vLyBtb2R1bGUgaWQgPSAxXG4vLyBtb2R1bGUgY2h1bmtzID0gMCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///1\n");
 
 /***/ })
 /******/ ]);
