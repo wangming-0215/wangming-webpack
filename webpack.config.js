@@ -10,6 +10,23 @@ let config = {
     path: path.resolve(__dirname, './public'),
     filename: 'output.js'
   },
+  resolve: {
+    extensions: [
+      '.js',
+      '.jsx',
+      '.json',
+      '.scss',
+      '.css',
+      '.jpeg',
+      '.jpg',
+      '.gif',
+      '.png'
+    ],
+    alias: {
+      // create aliases
+      images: path.resolve(__dirname, 'src/assets/images')
+    }
+  },
   module: {
     rules: [
       {
@@ -20,38 +37,27 @@ let config = {
       {
         test: /\.scss$/,
         // loader: ['style-loader', 'css-loader', 'sass-loader']
-        use: ExtractTextPlugin.extract({
-          // call our plugin with extract method
-          use: ['css-loader', 'sass-loader'], // use these loaders
-          fallback: 'style-loader' // fallback for any css not extracted
-        })
+        use: ['css-hot-loader'].concat(
+          // hmr for styles
+          ExtractTextPlugin.extract({
+            // call our plugin with extract method
+            use: ['css-loader', 'sass-loader', 'postcss-loader'], // use these loaders
+            fallback: 'style-loader' // fallback for any css not extracted
+          })
+        )
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
-          'file-loader?context=src/assets/images/&name=images/[path][name].[ext]',
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
           {
-            // images loader
-            loader: 'image-webpack-loader',
-            query: {
-              mozjpeg: {
-                progressive: true
-              },
-              gifsicle: {
-                interlaced: false
-              },
-              optipng: {
-                optimizationLevel: 4
-              },
-              pngquant: {
-                quality: '75-90',
-                speed: 3
-              }
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              context: 'src/assets/images/',
+              name: 'images/[path][name].[ext]'
             }
           }
-        ],
-        exclude: /node_modules/,
-        include: __dirname
+        ]
       }
     ]
   },

@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);body {
   height: 100vh;
-  background-color: #878cdf;
+  background-color: #99fbc6;
   color: #99fbc6;
   font-size: 5rem;
   font-weight: 900;
@@ -8,6 +8,8 @@
 
 .container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   .container .image-wrapper {
     display: inline-block;

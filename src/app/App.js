@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import cat from '../assets/images/cat.jpg';
-import dog from '../assets/images/dog.png';
-import dogs from '../assets/images/dogs.gif';
+import cat from 'images/cat';
+import dog from 'images/dog';
+import dogs from 'images/dogs';
 
 const hello = () => {
   return (
